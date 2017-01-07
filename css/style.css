@@ -1,0 +1,70 @@
+body {
+	background-color: #FEFEFE;
+    font: 24px/1.5 "Neue Haas Unica W01 Regular", Helvetica, Arial,sans-serif;
+    color: rgba(35,30,30,0.9);
+    text-rendering: optimizeLegibility;
+}
+
+ol{
+	list-style-type: upper-roman;
+	margin: 1em;
+}
+
+ul.bulletless{
+    list-style: none
+}
+
+hr.style1 {
+	border: 1px dashed #8c8b8b;
+}
+
+/*Images*/
+.img-profile{
+    width: 20em;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.img-work-page{
+    width: 30em;
+    display: block;
+    margin: 0 auto;
+}
+
+/*links*/
+a{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a.title{
+	 color: rgba(35,30,30,0.9);
+}
+
+a.Tyler{
+	color: #6699ff;
+}
+
+a.Github{
+	color: #00CC77;
+}
+
+a.Writing{
+	color: #E64626;
+}
+
+a.CodingSpace{
+	color: #D3771A;
+}
+
+/*navbar*/
+.navbar-default{
+    background-color: #FEFEFE;
+    border:0;
+}
+
+.navbar-nav > li{
+    margin-right: 10px;
+    padding-right: 5px;
+}
