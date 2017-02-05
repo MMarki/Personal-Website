@@ -12,20 +12,32 @@ section.text-section{
     margin: 0 auto;
 }
 
+section.text-section-thin{
+    max-width: 36em;
+    margin: 0 auto;
+}
+
 ol{
 	list-style-type: upper-roman;
 	margin: 1em;
 }
 
 ul.bulletless{
-    list-style: none
+    list-style: none;
 }
 
 hr.style1 {
 	border: 1px dashed #8c8b8b;
 }
 
+h1.work-header {
+    text-align: center;
+    font-size: 2em;
+}
 
+p.work-tasks {
+    text-align: center;
+}
 
 /*Images*/
 .img-profile{
@@ -38,7 +50,7 @@ hr.style1 {
 }
 
 .img-work-page{
-    width: 30em;
+    width: 50em;
     display: block;
     margin: 0 auto;
     padding-top: 30px;
