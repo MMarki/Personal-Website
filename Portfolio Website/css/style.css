@@ -1,6 +1,6 @@
 body {
 	background-color: #FEFEFE;
-    font: 24px/1.5 "Neue Haas Unica W01 Regular", Helvetica, Arial,sans-serif;
+    font: 24px/1.5 'Montserrat', Helvetica, Arial,sans-serif;
     color: rgba(35,30,30,0.9);
     text-rendering: optimizeLegibility;
 }
@@ -59,7 +59,7 @@ p.work-tasks {
 
 figcaption{
     text-align: center;
-    font: 20px/1.0 "Neue Haas Unica W01 Regular", Helvetica, Arial,sans-serif;
+    font: 20px/1.0 'Montserrat', Helvetica, Arial,sans-serif;
 }
 
 figure{
@@ -96,6 +96,7 @@ a.image-link {
     display: inline-block;
     vertical-align: bottom; /* try out: bottom, middle, top */
     margin-bottom: 30px;
+    text-decoration: none;
 }
 
 a.image-link img {
@@ -112,11 +113,26 @@ a.image-link img {
     margin-bottom: 10px;
 }
 
+.image-link .text {
+display: inline;
+text-align: left;
+position: absolute;
+bottom:50px;
+left:25px;
+visibility:hidden;
+color: black;
+}
+
+.image-link:hover .text {
+visibility:visible;
+}
+
 
 /*navbar*/
 .navbar-default{
     background-color: #FDFDFD;
-    border:0;
+    border: 0px;
+    margin-top: 10px;
     padding-right: 10px;
 }
 
@@ -133,6 +149,14 @@ a.image-link img {
 
 .navbar-nav > li.active > a{
     background-color: #6699ff !important;
+}
+
+.navbar-nav > li.active-about > a{
+    background-color: #E64626 !important;
+}
+
+.navbar-nav > li.active-res > a{
+    background-color: #D3771A !important;
 }
 
 .navbar-nav > li.active > a > span{
