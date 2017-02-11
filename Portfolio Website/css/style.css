@@ -13,7 +13,7 @@ section.text-section{
 }
 
 section.text-section-thin{
-    max-width: 36em;
+    max-width: 42em;
     margin: 0 auto;
 }
 
@@ -37,6 +37,10 @@ h1.work-header {
 
 p.work-tasks {
     text-align: center;
+}
+
+p.tools{
+    font-weight: bold;
 }
 
 /*Images*/
