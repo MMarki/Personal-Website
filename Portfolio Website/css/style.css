@@ -70,10 +70,26 @@ figure{
 }
 
 .img-resume{
-    max-width: 59em;
+    max-width: 50em;
     max-height: 50em;
     margin: 0 auto;
     text-align: center;
+}
+
+@media (max-width: 991px) {
+ .col-md-5 img{
+        width:40%;
+        padding-bottom: 25px;
+        margin: 0 auto;
+    }
+}
+
+h2{
+    text-align: center;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    padding-top: 5px;
+    margin-bottom: 20px;
 }
 
 /*links*/
