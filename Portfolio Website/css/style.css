@@ -6,7 +6,6 @@ body {
 }
 
 /*Text*/
-
 section.text-section{
     max-width: 50em;
     margin: 0 auto;
@@ -124,13 +123,25 @@ position: absolute;
 bottom:50px;
 left:25px;
 visibility:hidden;
-color: black;
+color: white;
+}
+
+.image-link .thumb-overlay {
+background: rgba(21,21,21,0);
+bottom: 0;
+left: 0;
+top: 0;
+right: 0;
+position: absolute;
 }
 
 .image-link:hover .text {
 visibility:visible;
 }
 
+.image-link:hover .thumb-overlay {
+background: rgba(21,21,21,0.7);
+}
 
 /*navbar*/
 .navbar-default{
