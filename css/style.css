@@ -1,8 +1,19 @@
 body {
 	background-color: #FEFEFE;
-    font: 24px/1.5 "Neue Haas Unica W01 Regular", Helvetica, Arial,sans-serif;
+    font: 24px/1.5 'Montserrat', Helvetica, Arial,sans-serif;
     color: rgba(35,30,30,0.9);
     text-rendering: optimizeLegibility;
+}
+
+/*Text*/
+section.text-section{
+    max-width: 50em;
+    margin: 0 auto;
+}
+
+section.text-section-thin{
+    max-width: 42em;
+    margin: 0 auto;
 }
 
 ol{
@@ -11,11 +22,24 @@ ol{
 }
 
 ul.bulletless{
-    list-style: none
+    list-style: none;
 }
 
 hr.style1 {
 	border: 1px dashed #8c8b8b;
+}
+
+h1.work-header {
+    text-align: center;
+    font-size: 2em;
+}
+
+p.work-tasks {
+    text-align: center;
+}
+
+p.tools{
+    font-weight: bold;
 }
 
 /*Images*/
@@ -23,13 +47,62 @@ hr.style1 {
     width: 20em;
     display: block;
     margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
     border-radius: 50%;
 }
 
 .img-work-page{
-    width: 30em;
+    width: 50em;
     display: block;
     margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-color: #FDFDFD;
+}
+
+.gif-work-page{
+    width: 20em;
+    display: block;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+figcaption{
+    text-align: center;
+    font: 20px/1.0 'Montserrat', Helvetica, Arial,sans-serif;
+}
+
+figure{
+    margin-bottom: 20px;
+}
+
+.img-resume{
+    max-width: 50em;
+    max-height: 50em;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px;
+    border-width: 5px;
+    border-style: solid;
+}
+
+@media (max-width: 991px) {
+ .col-md-5 img{
+        width:40%;
+        padding-bottom: 25px;
+        margin: 0 auto;
+    }
+}
+
+h2{
+    text-align: center;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    margin-bottom: 20px;
 }
 
 /*links*/
@@ -42,29 +115,121 @@ a.title{
 	 color: rgba(35,30,30,0.9);
 }
 
-a.Tyler{
+a.Blue{
 	color: #6699ff;
 }
 
-a.Github{
+a.Green{
 	color: #00CC77;
 }
 
-a.Writing{
+a.Red{
 	color: #E64626;
 }
 
-a.CodingSpace{
+a.Ochre{
 	color: #D3771A;
+}
+
+a.image-link {
+    width: 100%;
+    float: left;
+    height: 500px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+a.resume-link {
+    display: table !important;
+    vertical-align: bottom;
+    max-width: 50em;
+    max-height: 50em;
+    margin: 0 auto;
+    text-align: center;
+}
+
+a.image-link img {
+    vertical-align: bottom; /* try out: bottom, middle, top */
+}
+
+#portfolio .portfolio-item {
+    text-align: center;
+    display: block;
+}
+
+.about-me-panel{
+    background-color: #E64626;
+    margin-bottom: 10px;
+}
+
+.image-link .text {
+display: inline;
+text-align: left;
+position: absolute;
+bottom:50px;
+left:25px;
+visibility:hidden;
+color: white;
+}
+
+.image-link .thumb-overlay {
+background: rgba(21,21,21,0);
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height:100%;
+display: block;
+vertical-align: bottom;
+}
+
+.image-link:hover .text {
+visibility:visible;
+}
+
+.image-link:hover .thumb-overlay {
+background: rgba(21,21,21,0.7);
 }
 
 /*navbar*/
 .navbar-default{
     background-color: #FEFEFE;
-    border:0;
+    border: 0px;
+    margin-top: 10px;
+    padding-right: 10px;
 }
 
 .navbar-nav > li{
-    margin-right: 10px;
-    padding-right: 5px;
+    margin-left: 10px;
+    padding-left: 5px;
+}
+
+.navbar-nav > li.active{
+    -ms-transform: skewX(-8deg); /* IE 9 */
+    -webkit-transform: skewX(-8deg); /* Safari */
+    transform: skewX(-10deg);
+}
+
+.navbar-nav > li.active > a{
+    background-color: #6699ff !important;
+}
+
+.navbar-nav > li.active-about > a{
+    background-color: #E64626 !important;
+}
+
+.navbar-nav > li.active-res > a{
+    background-color: #D3771A !important;
+}
+
+.navbar-nav > li.active > a > span{
+    display:inline-block; /*important line*/
+    -ms-transform: skewX(10deg); /* IE 9 */
+    -webkit-transform: skewX(10deg); /* Safari */
+    transform: skewX(10deg);
+    color:  #FEFEFE; 
 }

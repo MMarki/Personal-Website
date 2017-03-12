@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>THAT ONE ROBIT I MADE THAT DOES THE CULLURS</title>
+        <link rel="stylesheet" type="text/css" href=".\css\bootstrap.css"/>
+        <link rel="stylesheet" type="text/css" href=".\css\bootstrap-responsive.css"/>
+		<link rel="stylesheet" type="text/css" href=".\css\style.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700" rel="stylesheet">
+	</head>
+	<body>
+        <!--Navbar-->
+        <div class="container-fluid">
+            <nav class="navbar navbar-default">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="work.html">Marcel Marki</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="active"><a href="work.html"><span>Work</span></a></li>
+                  <li><a href="about-me.html">About Me</a></li>
+                  <!--li><a href="fun.html">Fun</a></li-->
+                  <li><a href="resume.html">R&eacute;sum&eacute;</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="container-fluid">
+            <div class="col-lg-12">
+                <section class="text-section">
+                    <h1 class="work-header">Building a Twitter Bot for Designers</h1>
+                    <p class="work-tasks"><a class="Github" href="#research">Research</a>
+                        |
+                        <a class="Github" href="#code-prototyping">Code Prototyping</a>
+                        |
+                        <a class="Github" href="#implementation">Implementation</a>
+                    </p>
+                
+                    <h2>The Goal:</h2>
+                    <p>Wanted to make a minimalist tool for generating color palettes. Important that it not fall into the trappings of other Twitter bots. I didn't want to just be vomiting data out into the ether. I wanted users to interact with it.</p>
+                    
+                    <h2><a id="research"></a>Research:</h2>
+                    <p>color Schemer. The perfect art project bot. Wanted to make something more stripped down and usable. It's important that users can copy the color values and paste them into a color editor.</p>
+                     <figure>
+                        <img class="img-work-page img-responsive" src="./img/img-placeholder.PNG" alt="Sketches">
+                        <figcaption>Sketches.</figcaption>
+                    </figure>
+                    <p>I regularly got feedback from Elissa so that we could iterate on these early sketches and come up with something that made sense.</p>
+                    <h2><a id="code-prototyping"></a>Code Prototyping:</h2>
+                    <p>General Bot Structure-
+                    Built color harmonies. In my experience, all the most effective harmony algorithms worked with hsv or hls, but I wanted my interface to be RGB, so I wrote utility functions to convert between the two, then wrote a bunch of harmony algorithms.
+
+                    List the harmonies used, with pictures-</p>
+                    <h2><a id="implementation"></a>Implementation:</h2>
+                    <p>Testing, Hosting, etc.</p>
+                    <p class="tools">Tools Used: Python, Twitter API</p>
+                </section>
+            </div>
+        </div>
+	</body>
+</html>

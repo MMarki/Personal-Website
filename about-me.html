@@ -7,54 +7,58 @@
         <link rel="stylesheet" type="text/css" href=".\css\bootstrap.css"/>
         <link rel="stylesheet" type="text/css" href=".\css\bootstrap-responsive.css"/>
 		<link rel="stylesheet" type="text/css" href=".\css\style.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700" rel="stylesheet">
 	</head>
 	<body>
 		 <!--Navbar-->
-        <nav class="navbar navbar-default">
-            <div class="navbar-header">
-              <a class="navbar-brand" href="work.html">Marcel Marki</a>
-            </div>
-            <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="work.html">Work</a></li>
-              <li><a href="about-me.html">About Me</a></li>
-              <li><a href="fun.html">Fun</a></li>
-              <li><a href="resume.html">R&eacutesum&eacute</a></li>
-            </ul>
-        </nav>
+        <div class="container-fluid">
+            <nav class="navbar navbar-default">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="work.html">Marcel Marki</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="work.html">Work</a></li>
+                    <li class="active active-about"><a href="about-me.html"><span>About Me</span></a></li>
+                    <!--li><a href="fun.html">Fun</a></li-->
+                    <li><a href="resume.html">R&eacute;sum&eacute;</a></li>
+                </ul>
+            </nav>
+        </div>
         
-		<div id="content">
-            <p>A few things about me:</p>
-            <p>I want to make digital spaces smarter, more friendly, and more fulfilling places to work and play.</p>
-            <p>I have a deep love of stories, game design, and ilustration.</p>
-            <p>In college, I built devices with Wiimotes, GPS technologies, microprocessors, pressure sensors, printed circuit boards, and Raspberry Pis. I made videogames in Unity. I learned about software development management, robotics, and Android app development.</p>  
-            <p>Recently, I've been building web-apps and improving data integrity for the Public Sector, and teaching kids how to Code.</p>
-			<p>I care about: </p>
-			<ul class="bulletless">
-				<li>Writing maintainable, readable code.</li>
-				<li>The meaning of digital things in our lives.</li>
-				<li>Media literacy.</li>
-				<li>Intuitive design.</li>
-				<li>Storytelling.</li>
-				<li>Machine learning.</li>
-			</ul>
-			
-            <!--hr class="style1">
-			<p class="workheader"> ~Code~ </p>
-			<div class="projects">
-				<a class="Github" href= "https://github.com/MMarki">Code</a>
-			</div>
-			<hr class="style1">
-			<p class="workheader"> ~Writing~ </p>
-			
-			<div class="projects">
-				<a class="Writing" href= "https://github.com/MMarki">Writing</a>
-			</div>
-			<hr class="style1">
-			<p class="workheader"> ~Art~ </p>
-			
-			<div class="projects">
-				<a class="Art" href= "https://github.com/MMarki">Art</a>
-			</div-->
-		</div>
+        <div class="container-responsive">
+            <div class="row-fluid">
+                <div class="col-md-5">
+                   <img class="img-responsive" src="./img/img-profile.jpg">
+                </div>
+                <div class="col-md-7">
+                    <section class="text-section">
+                        <h2>A few things about me:</h2>
+                        <p>I want to make friendlier digital spaces, smarter digital tools, and more fulfilling digital experiences.</p>
+                        <p>I am obsessed with interactive media and have a deep love for stories, game design, and illustration.</p>
+                        <p>My influences include LEGO, Ralph McQuarrie, Brett Victor, Don Norman, Studio Ghibli, Hidetaka Miyazaki, and the guy who made <a href="./img/trash-dove.gif">this GIF.</a></p>
+                        <p>I care about: </p>
+                        <ul class="bulletless">
+                            <li>Writing maintainable, readable code.</li>
+                            <li>The meaning of digital things in our lives.</li>
+                            <li>Media literacy.</li>
+                            <li>Intuitive design.</li>
+                            <li>Storytelling.</li>
+                            <li>Machine learning.</li>
+                        </ul>
+                    </section>
+                    <section class="text-section">
+                            <p>Let's make something magical:</p>
+                            <p> Email:
+                                <a href="mailto:marcelmarki1@gmail.com?Subject=Hello%20Marcel" target="_top">marcelmarki1@gmail.com</a>
+                            </p>
+                            <p> Social:
+                                <a href="">Facebook</a> | 
+                                <a href="">LinkedIn</a> | 
+                                <a href="">Behance</a>
+                            </p>
+                    </section>
+                </div> 
+            </div>
+        </div>
 	</body>
 </html>
