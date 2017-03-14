@@ -61,6 +61,14 @@ p.tools{
     border-color: #FDFDFD;
 }
 
+.img-work-page-half{
+    width: 16em;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-color: #FDFDFD;
+}
+
 .gif-work-page{
     width: 20em;
     display: block;
