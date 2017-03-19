@@ -35,33 +35,43 @@
                         |
                         <a class="Github" href="#implementation">Implementation</a>
                     </p>
-                
+                    <img class="img-work-page img-responsive" src="./img/img-placeholder.PNG" alt="Cover">
+                    <p class="tools">Tools Used: Python, Twitter API</p>
                     <h2>The Goal:</h2>
                     <p>I wanted to make a minimalist tool for generating color palettes. I wanted to ensure that it not fall into the trappings of other Twitter bots. I didn't want to just be vomiting data out into the ether. I wanted users to interact with it.</p>
                     
                     <h2><a id="research"></a>Research:</h2>
-                    <p> After doing some research, I discovered that the twitter bot Color Schemer does something similar. Every hour, it tweets a color palette and assigns creative names to each color in the palette. In my opinion it's the perfect art-project bot. I wanted to make something more stripped down and usable, so my design priorities were different for my bot. It was important to me that the user could copy the color values and paste them into a color editor.</p>
+                    <p> I discovered that the twitter bot <a href="https://twitter.com/colorschemez">Color Schemer</a> does something similar. Every hour, it tweets a color palette and assigns creative names to each color in the palette. In my opinion it's the perfect art-project bot. I wanted to make something more stripped down and usable, so my design priorities were different for my bot. It was important to me that the user could copy the color values and paste them into a color editor.</p>
                      <figure>
-                        <img class="img-work-page img-responsive" src="./img/color-schemez-output.PNG" alt="Example">
+                        <img class="img-work-page-half img-responsive" src="./img/color-schemez-output.PNG" alt="Example">
                         <figcaption>An example of Color Schemer's Output.</figcaption>
                     </figure>
                     
                     <p> Bot flow.</p>
                      <figure>
-                        <img class="img-work-page img-responsive" src="./img/img-placeholder.PNG" alt="Example">
+                        <img class="img-work-page img-responsive" src="./img/color-bot-input-output.PNG" alt="Example">
                         <figcaption>Bot inputs and outputs.</figcaption>
                     </figure>
                     
                     <h2><a id="code-prototyping"></a>Code Prototyping:</h2>
                     <p>General Bot Structure-
                     Built color harmonies. In my experience, all the most effective harmony algorithms worked with hsv or hls, but I wanted my interface to be RGB, so I wrote utility functions to convert between the two, then wrote a bunch of harmony algorithms.
-                        
+                    </p> 
+                    <figure>
+                        <img class="img-work-page img-responsive" src="./img/color-bot-flow.PNG" alt="Example">
+                        <figcaption>Bot flow.</figcaption>
+                    </figure>
+                    
+                    <p>
                     I tested my bot in the command line, generating many color palettes and tweaking the algorithms until they yielded attractive color harmonies.
-
-                    List the harmonies used, with pictures-</p>
+                    </p>
+                    <figure>
+                        <img class="img-work-page img-responsive" src="./img/color-bot-harmonies.PNG" alt="Example">
+                        <figcaption>Color Harmonies</figcaption>
+                    </figure>
+                    
                     <h2><a id="implementation"></a>Implementation:</h2>
                     <p>Testing, Hosting, etc.</p>
-                    <p class="tools">Tools Used: Python, Twitter API</p>
                 </section>
             </div>
         </div>
