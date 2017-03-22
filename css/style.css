@@ -10,12 +10,12 @@ section.text-section{
     max-width: 50em;
     margin: 0 auto;
     text-align: justify;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 section.text-section-thin{
-    max-width: 42em;
+    max-width: 40em;
     margin: 0 auto;
     text-align: justify;
 }

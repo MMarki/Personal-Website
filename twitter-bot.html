@@ -14,7 +14,7 @@
         <div class="container-fluid">
             <nav class="navbar navbar-default">
                 <div class="navbar-header">
-                  <a class="navbar-brand" href="work.html">Marcel Marki</a>
+                  <a class="navbar-brand" href="index.html">Marcel Marki</a>
                 </div>
                 <ul class="nav navbar-nav navbar-right">
                   <li class="active"><a href="work.html"><span>Work</span></a></li>
@@ -41,21 +41,20 @@
                     <p>I wanted to make a minimalist tool for generating color palettes. I wanted to ensure that it not fall into the trappings of other Twitter bots. I didn't want to just be vomiting data out into the ether. I wanted users to interact with it.</p>
                     
                     <h2><a id="research"></a>Research:</h2>
-                    <p> I discovered that the twitter bot <a href="https://twitter.com/colorschemez">Color Schemer</a> does something similar. Every hour, it tweets a color palette and assigns creative names to each color in the palette. In my opinion it's the perfect art-project bot. I wanted to make something more stripped down and usable, so my design priorities were different for my bot. It was important to me that the user could copy the color values and paste them into a color editor.</p>
+                    <p> One example that piqued my interest was <a href="https://twitter.com/colorschemez">Color Schemer</a>. Every hour, it tweets a color palette and assigns creative names to each color in the palette. In my opinion it's the perfect art-project bot. I wanted to make something more stripped down and usable, so my design priorities were different for my bot. It was important to me that the user could copy the color values and paste them into a color editor.</p>
                      <figure>
                         <img class="img-work-page-half img-responsive" src="./img/color-schemez-output.PNG" alt="Example">
                         <figcaption>An example of Color Schemer's Output.</figcaption>
                     </figure>
                     
-                    <p> Bot flow.</p>
+                    <p> I wanted my users to be able to interact with the bot directly. They should be able to stay in Twitter and just tweet at it to recieve a new color palette. Ultimately, I decided that if they tweet a color at the bot, it should generate a palette that includes the color they tweeted. At its most basic, the inputs and outputs of the bot are as follows:</p>
                      <figure>
                         <img class="img-work-page img-responsive" src="./img/color-bot-input-output.PNG" alt="Example">
                         <figcaption>Bot inputs and outputs.</figcaption>
                     </figure>
                     
                     <h2><a id="code-prototyping"></a>Code Prototyping:</h2>
-                    <p>General Bot Structure-
-                    Built color harmonies. In my experience, all the most effective harmony algorithms worked with hsv or hls, but I wanted my interface to be RGB, so I wrote utility functions to convert between the two, then wrote a bunch of harmony algorithms.
+                    <p>The core of the bot is its ability to generate color harmonies, so the first thing I did was work on coding a variety of those. All the examples I found worked by taking a default color and making alterations to the hue, saturation, and value to create new colors in the harmony. I was able to build my own color harmony algorithms that took an HSV color and returned a list of HSV values that represented a harmony. Since I wanted my interface to be RGB, I wrote utility functions to convert between the two. What was the name of the other libraries I used? what did I use for image creation?
                     </p> 
                     <figure>
                         <img class="img-work-page img-responsive" src="./img/color-bot-flow.PNG" alt="Example">
@@ -63,7 +62,7 @@
                     </figure>
                     
                     <p>
-                    I tested my bot in the command line, generating many color palettes and tweaking the algorithms until they yielded attractive color harmonies.
+                    I tested my bot in the command line, generating many color palettes and tweaking the algorithms until they yielded attractive color harmonies. Below are some examples of color harmonies that could be created for #41D3BD.
                     </p>
                     <figure>
                         <img class="img-work-page img-responsive" src="./img/color-bot-harmonies.PNG" alt="Example">
@@ -71,7 +70,10 @@
                     </figure>
                     
                     <h2><a id="implementation"></a>Implementation:</h2>
-                    <p>Testing, Hosting, etc.</p>
+                    <p>User Input.
+                        Should do usability testing.
+                        Testing.
+                        Hosting</p>
                 </section>
             </div>
         </div>
