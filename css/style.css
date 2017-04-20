@@ -48,7 +48,7 @@ p.tools{
 
 /*Images*/
 .img-profile{
-    width: 20em;
+    width: 25em;
     display: block;
     margin: 0 auto;
     padding-top: 30px;
@@ -171,6 +171,8 @@ a.image-link img {
 #portfolio .portfolio-item {
     text-align: center;
     display: block;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .about-me-panel{
@@ -221,8 +223,8 @@ background: rgba(21,21,21,0.7);
 }
 
 .navbar-nav > li.active{
-    -ms-transform: skewX(-8deg); /* IE 9 */
-    -webkit-transform: skewX(-8deg); /* Safari */
+    -ms-transform: skewX(-10deg); /* IE 9 */
+    -webkit-transform: skewX(-10deg); /* Safari */
     transform: skewX(-10deg);
 }
 
@@ -244,4 +246,52 @@ background: rgba(21,21,21,0.7);
     -webkit-transform: skewX(10deg); /* Safari */
     transform: skewX(10deg);
     color:  #FEFEFE; 
+}
+
+.navbar-img {
+    height: 45px;
+    padding: 0px;
+    margin: -8px;
+}
+
+.headline{
+    font-size: 80px;
+    background-color: #E64626;
+    padding-bottom: 20px;
+}
+
+#switch {
+    border-bottom-style: solid;
+    border-bottom-color: rgba(35,30,30,0.9);
+    border-bottom-width: 7px;
+}
+
+.loadingContainers{
+    position: relative;
+}
+
+.loading{
+    position: absolute;
+    width: 760px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loadingFront{
+    position: absolute;
+    height: 200px;
+    z-index: 2;
+}
+
+#myBar {
+    width: 1%;
+    height: 200px;
+    position: absolute;
+    background-color: #E64626;
+    -ms-transform: skewX(-15deg);
+    -webkit-transform: skewX(-15deg);
+    transform: skewX(-15deg);
+    left: 30px;
+    
 }

@@ -10,18 +10,53 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700" rel="stylesheet">
 	</head>
 	<body>
-        <div>
+        <!--div>
             <img class="img-profile" src="./img/img-profile.jpg">
+        </div-->
+        <div class=loadingContainer>
+            <div class= "loading">
+                <img class='loadingFront' src="img/personal-logo-para.png">
+                <div id="myBar"></div>
+            </div>
         </div>
-		<section class="text-section-thin">
+        
+		<section class="content text-section-thin">
             <div class="col-lg-12">
-                <p>I'm Marcel Marki, a software developer and UX designer living in Brooklyn, NY. I'm currently teaching kids how to code and designing better learning tools at <a href="http://www.thecodingspace.com/">The Coding Space.</a>
-                Previously, I was a full-stack developer solving problems for large public sector clients at <a class= "Green" href="http://www.tylertech.com">Tyler Technologies.</a>
-                I'm looking for new opportunities, either freelance or full-time.
+                <p>Hi!</p>
+                <p>I'm Marcel Marki, a software developer and UX designer living in Brooklyn, NY.
             </div>
             <div class="text-center">
                 <p><a class="Red" href="work.html">Work</a></p>
             </div>
         </section>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
+        <script>
+            move()
+            
+            function move() {
+            var elem = document.getElementById("myBar"); 
+            var width = 1;
+            var id = setInterval(frame, 15);
+            function frame() {
+                    if (width >= 100) {
+                        clearInterval(id);
+                        fadeIt();
+                    } else {
+                        width++; 
+                        elem.style.width = width + '%'; 
+                    }
+                }
+            }
+            
+             $(document).ready(function(){
+                $(".content").hide();
+             })
+            
+            var fadeIt = function(){
+              $(".loading").fadeOut("slow", function(){
+                $(".content").fadeIn("slow");
+              });
+            };
+        </script>
 	</body>
 </html>
