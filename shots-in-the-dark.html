@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>DAT PROJECT WIT DA VIDYA</title>
+        <link rel="stylesheet" type="text/css" href=".\css\bootstrap.css"/>
+        <link rel="stylesheet" type="text/css" href=".\css\bootstrap-responsive.css"/>
+		<link rel="stylesheet" type="text/css" href=".\css\style.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700" rel="stylesheet">
+	</head>
+	<body>
+        <!--Navbar-->
+        <div class="container-fluid">
+            <nav class="navbar navbar-default">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="index.html"><img class="navbar-img" src="./img/personal-logo.png"></a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="active"><a href="work.html"><span>Work</span></a></li>
+                  <li><a href="about-me.html">About Me</a></li>
+                  <!--li><a href="fun.html">Fun</a></li-->
+                  <li><a href="resume.html">R&eacute;sum&eacute;</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="container-fluid">
+            <div class="col-lg-12">
+                <section class="text-section">
+                    <h1 class="work-header">Redesigning a Videogame Interface</h1>
+                    <p class="work-tasks">
+                        <a class="Github" href="#usability-testing">Usability Testing</a>
+                        |
+                        <a class="Github" href="#interpret">Interpretting the Results</a>
+                        |
+                        <a class="Github" href="#ui-changes">User Interface Changes</a>
+                    </p>
+                    <img class="img-work-page img-responsive" src="./img/img-placeholder.PNG" alt="Cover">
+                
+                    <h2>Background:</h2>
+                    <p>My roommate and I built a 2D Platformer/Shooter called Shots in the Dark while we were in college. Shots in the Dark is a game about exploring dark dungeons, shooting monsters with a variety of guns, and getting loot.
+                    We were able to work off feedback from our Beta players, but we didn't feel that the feedback we got was as valuable as data we could collect from usability tests. We knew that people sometimes got frustrated with the game, that they played through it slower than we'd like, and that play sessions were running shorter than intended because they would get tired or bored. We wanted to figure out where those issues were coming from by observing people playing the game.</p>
+                    
+                    <h2><a id="usability-testing"></a>Usability Testing:</h2>
+                    <p>We sat down with different players one-on-one and asked them to play through the game. We encouraged them to vocalize anything they felt while they played. We let them know ahead of time that we would not be answering questions of helping them through the game -- we were just there to take notes about their play session so we could better understand how people played the game.</p>
+                    
+                    <p>By repeating this process for a dozen players, we were able to glean patterns in player behavior that we hadn't noticed before. The recurring behaviors we saw are as follows:</p>
+                    <ul>
+                        <li>Players could hoard a select few weapons and not use any others for the whole game.</li>
+                        <li>Players spent too much time in the inventory selecting and organizing their items.</li>
+                        <li>Players could hoard health potions, hide during a firefight, and then use all their health potions at once to trivialize difficult encounters.</li>
+                        <li>Players got lost easilly and missed items that were located toward the top of the screen.</li>
+                        <li>Players did not read the tutorial text.</li>
+                        <li>Players did not know when they were out of ammo.</li>
+                        <li>Players did not understand the nuances of the inventory system.</li>
+                        <li>Players frequently switched to the wrong item accidentally during combat.</li>
+                    </ul>
+                    
+                    <p>These behaviors aren't the player's fault. They were just symptoms of the problems with the user interface and the controls of the game. The next step was to figure out the root problems that were causing these behaviors.</p>
+                    
+                    <h2><a id="interpret"></a>Interpretting the Results:</h2>
+                    <p>Almost all of the issues we saw during playtesting tied back to the design of the inventory, the controls, and the HUD (head's-up display). Let's go through them one-by-one:</p>
+                    
+                    <p><i>Players could hoard a select few weapons and not use any others for the whole game.</i> --> The inventory allows the player to carry as many as 9 weapons, and ammo is available frequently enough that they can restock those weapons without ever considering new ones.</p>
+                    
+                    <figure>
+                        <img class="img-work-page img-responsive" src="./img/shots-redesign/old-inventory.png" alt="Wireframes">
+                        <figcaption>Example of old inventory.</figcaption>
+                    </figure>
+                    
+                    <p><i>Players spent too much time in their inventory selecting and organizing their items.</i> --> The inventory is confusing, cumbersome, and requires too much player-input. They have to agonize over which item to keep and which item to drop because there is not space reserved for mission-critical items like keys and light-sources.</p>
+                    
+                    <figure>
+                        <img class="img-work-page img-responsive" src="./img/shots-redesign/old-choices.png" alt="Wireframes">
+                        <figcaption>What should they drop to pick up the access unit?</figcaption>
+                    </figure>
+                        
+                    <p><i>Players got lost easilly and missed items that were located toward the top of the screen.</i> --> The inventory covers the entire the top of the screen. The HUD takes up too much screen real-estate, shows information that is not always relevant, and obscures important information about the game world. It's easy to miss and item or a passageway if the HUD is covering it.</p>
+                    
+                    <p><i>Players did not read the tutorial text.</i> --> There is too much tutorial text. Players are interrupted by it too frequently in the first 10 minutes of gameplay. It is not always relevant to what they are trying to do at that exact moment.</p>
+                    
+                    <p><i>Players did not know when they were out of ammo.</i> --> There is a big red message over the player character's head when their current weapon is out of ammo, but they're not looking at it, they're looking at wherever their reticle is because that's where they're shooting. We need a different kind of cue to make it clear that they are out of ammo, regardless of where they are looking.</p>
+                    
+                    <p><i>Players did not understand the nuances of the inventory system.</i> --> The inventory system is too complex for a casual game.</p>
+                    
+                    <p><i>Players frequently switched to the wrong item accidentally during combat.</i> --> There are too many controls mapped to one action. It's easy to accidentally press a button and have it change the equipped item.
+                    </p>
+                    
+                    <p>With these core problems identified, I came up with a simple list of objectives to address these problems.</p>
+                    
+                    <ul>
+                        <li>Reduce the complexity of the inventory system and the controls.</li>
+                        <li>Redesign the inventory to encourage players to pick up new weapons and toguarantee a slot for mission-critical items. Automate any simple interactions, like using a key to open a locked door.</li>
+                        <li>Reduce the amount of screen real-estate taken up by the HUD. Only show information when it is absolutely relevant to the player's needs.</li>
+                        <li>Only show tutorial text when it is relevant and needed. Reduce the instances where the player feels like their play is getting disrupted.</li>
+                        <li>Provide better feedback about when a player is out of ammo.</li>
+                    </ul>
+                    
+                    <h2><a id="ui-changes"></a>User Interface Changes:</h2>
+                    <figure>
+                        <img class="img-work-page img-responsive" src="./img/shots-redesign/old-confidence-up.png" alt="Wireframes">
+                        <figcaption>Confidence Up was a huge popup that persisted for too long.</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="img-work-page img-responsive" src="./img/shots-redesign/old-modal-weapon.png" alt="Wireframes">
+                        <figcaption>Weapon Modal.</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="img-work-page img-responsive" src="./img/shots-redesign/old-weapon-modal.png" alt="Wireframes">
+                        <figcaption>Weapon Modal.</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="img-work-page img-responsive" src="./img/shots-redesign/old-small-modal.png" alt="Wireframes">
+                        <figcaption>Item info modal.</figcaption>
+                    </figure>
+                    
+                    
+                    <figure>
+                        <img class="img-work-page img-responsive" src="./img/shots-redesign/new-hud.png" alt="Wireframes">
+                        <figcaption>New HUD.</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="img-work-page img-responsive" src="./img/shots-redesign/new-confidence-meter.png" alt="Wireframes">
+                        <figcaption>Add File Modal Wireframe.</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="img-work-page img-responsive" src="./img/shots-redesign/new-compare-modal.png" alt="Wireframes">
+                        <figcaption>The new weapon modal makes it easier to compare weapon stats.</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="img-work-page img-responsive" src="./img/shots-redesign/new-small-modal.png" alt="Wireframes">
+                        <figcaption>This new Item Info Modal takes up less space.</figcaption>
+                    </figure>
+                </section>
+            </div>
+        </div>
+	</body>
+</html>
